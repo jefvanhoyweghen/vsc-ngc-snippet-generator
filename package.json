@@ -1,0 +1,53 @@
+{
+  "name": "vsc-ngc-snippet-generator",
+  "version": "1.0.0",
+  "description": "Visual Studio Code Snippet Generator for Angular Components",
+  "main": "./lib/index.js",
+  "scripts": {
+    "clean": "rimraf lib",
+    "lint": "eslint src test",
+    "build": "cross-env BABEL_ENV=production babel src --out-dir lib",
+    "prepublish": "npm run clean && npm run lint && npm run build"
+  },
+  "files": [
+    "lib",
+    "src"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jefvanhoyweghen/vsc-ngc-snippet-generator.git"
+  },
+  "keywords": [
+    "angular",
+    "ng",
+    "component",
+    "vsc",
+    "visual studio",
+    "snippet",
+    "generator"
+  ],
+  "author": "Jef Van Hoyweghen <jef@vanhoyweghen.net>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jefvanhoyweghen/vsc-ngc-snippet-generator/issues"
+  },
+  "homepage": "https://github.com/jefvanhoyweghen/vsc-ngc-snippet-generator#readme",
+  "dependencies": {
+    "glob": "^7.1.3"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "^8.2.1",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-minify": "^0.3.0",
+    "cross-env": "^5.1.3",
+    "eslint": "^4.16.0",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-jsx-a11y": "^6.0.2",
+    "eslint-plugin-react": "^7.4.0",
+    "rimraf": "^2.6.2"
+  }
+}
