@@ -1,6 +1,6 @@
 {
   "name": "vsc-ngc-snippet-generator",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Visual Studio Code Snippet Generator for Angular Components",
   "bin": {
     "vsc-ngc-snippet-generator": "index.ts"
