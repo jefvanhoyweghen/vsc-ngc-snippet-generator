@@ -1,5 +1,7 @@
 # Visual Studio Code Snippet Generator for Angular Components
 
+[![NPM](https://nodei.co/npm/vsc-ngc-snippet-generator.png?compact=true)](https://nodei.co/npm/vsc-ngc-snippet-generator/)
+
 **Generate Visual Studio Code Snippets for your Angular Components** ✨
 
 # Install
