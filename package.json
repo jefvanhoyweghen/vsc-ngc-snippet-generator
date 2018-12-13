@@ -28,6 +28,7 @@
   "homepage": "https://github.com/jefvanhoyweghen/vsc-ngc-snippet-generator#readme",
   "dependencies": {
     "@types/glob": "^7.1.1",
+    "add-shebang": "^0.1.0",
     "glob": "^7.1.3"
   },
   "devDependencies": {
@@ -35,6 +36,6 @@
     "typescript": "^3.2.2"
   },
   "scripts": {
-    "build": "tsc"
+    "build": "tsc && add-shebang"
   }
 }
