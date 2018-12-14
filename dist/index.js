@@ -1,4 +1,3 @@
-#!/usr/bin/env node
 "use strict";
 var __assign = (this && this.__assign) || function () {
     __assign = Object.assign || function(t) {
@@ -49,14 +48,14 @@ glob_1.default('**/*.component.ts', {
             ]);
             var inputRegex = /\@Input\(\)\n(.*?)(:|\s\=)/g;
             var inputs = void 0;
-            while ((inputs = inputRegex.exec(file)) !== null) {
+            while ((inputs = inputRegex.exec(fileData)) !== null) {
                 template = template.concat([
                     '\t[' + inputs[1].trim() + ']=""'
                 ]);
             }
             var outputRegex = /\@Output\(\)\n(.*?)(:|\s\=)/g;
             var outputs = void 0;
-            while ((outputs = outputRegex.exec(file)) !== null) {
+            while ((outputs = outputRegex.exec(fileData)) !== null) {
                 template = template.concat([
                     '\t(' + outputs[1].trim() + ')=""'
                 ]);
